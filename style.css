@@ -1,0 +1,417 @@
+/* ================= RESET ================= */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  overflow-x: hidden; /* empêche le scroll horizontal */
+}
+
+body {
+  font-family: 'Brody Script', cursive;
+  background-image: url('https://img.freepik.com/vecteurs-libre/fond-aquarelle-rose-peint-main-detaille_1048-17039.jpg?semt=ais_hybrid&w=740&q=80');
+  color: #333;
+  line-height: 1.6;
+}
+
+/* ================= NAVBAR ================= */
+header {
+  background-image: url('desktop-wallpaper-pink-gradient-black-and-pink.jpg');
+  padding: 15px 20px;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1100px;
+  width: 95%;
+  margin: auto;
+  flex-wrap: wrap;
+}
+
+.logo {
+  font-size: 20px;
+  font-weight: bold;
+  color: #fff;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.nav-links li a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+.nav-links li a:hover {
+  color: #25D366;
+}
+
+/* ================= PRODUITS ================= */
+.products {
+  width: 95%;
+  max-width: 1100px;
+  margin: 40px auto;
+  padding: 20px 0;
+}
+
+.products h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 28px;
+}
+
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.product {
+  background: #fff;
+  padding: 15px;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  text-align: center;
+  transition: transform 0.3s;
+}
+
+.product:hover {
+  transform: translateY(-5px);
+}
+
+.product img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 12px;
+}
+
+.product h3 {
+  margin: 10px 0;
+}
+
+.product p {
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+/* ================= ABOUT ================= */
+.about-text {
+  max-width: 800px;
+  margin: 50px auto;
+  padding: 20px;
+  text-align: center;
+  line-height: 1.6;
+  color: #333;
+}
+
+.about-text h2 {
+  font-size: 2em;
+  margin-bottom: 15px;
+}
+
+.about-text span {
+  color: #ff4081; /* couleur accent */
+}
+
+.about-text p {
+  font-size: 1.1em;
+  margin-bottom: 15px;
+}
+
+.btn-about {
+  display: inline-block;
+  background-color: #ff4081;
+  color: white;
+  padding: 12px 25px;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+.btn-about:hover {
+  background-color: #e03672;
+}
+
+/* ✅ Adaptation mobile */
+@media (max-width: 768px) {
+  .about-text {
+    padding: 15px;
+    text-align: center;
+  }
+
+  .about-text h2 {
+    font-size: 1.5em;
+  }
+
+  .about-text p {
+    font-size: 1em;
+  }
+
+  .btn-about {
+    width: 100%;
+    padding: 14px 0;
+    font-size: 1em;
+  }
+}
+
+.btn-about:hover {
+  background: #128c7e;
+}
+
+/* ================= CONTACT ================= */
+.contact {
+  padding: 50px 20px;
+  text-align: center;
+  background-image: url('localisation contact rose.jpg');
+}
+
+.contact-info {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  margin: 20px 0;
+}
+
+.contact-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background: white;
+  padding: 12px 20px;
+  border-radius: 12px;
+  box-shadow: 0 3px 8px rgba(0,0,0,0.1);
+  transition: transform 0.2s ease;
+  text-decoration: none;
+  color: #333;
+  flex: 1 1 200px;
+  max-width: 300px;
+}
+
+.contact-item img {
+  width: 32px;
+  height: 32px;
+}
+
+.contact-item:hover {
+  transform: scale(1.05);
+  background: #e6f7ff;
+}
+
+/* ================= BOUTONS ================= */
+.btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  margin: 5px 0;
+  padding: 10px;
+  border: none;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: transform 0.2s, opacity 0.3s;
+  color: #fff;
+  width: 100%;
+}
+
+.btn img {
+  width: 20px;
+  height: 20px;
+}
+
+.btn:hover {
+  transform: scale(1.05);
+  opacity: 0.9;
+}
+
+.btn-whatsapp { background: #25D366; }
+.btn-wave { background: #0a74f7; }
+.btn-om { background: #ff6600; }
+
+/* ================= CARROUSEL ================= */
+.carousel-block {
+  width: 95%;
+  max-width: 1100px;
+  overflow: hidden;
+  padding: 10px;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  margin: auto;
+}
+
+.slides-block {
+  display: flex;
+  gap: 20px;
+  animation: scrollImages 15s linear infinite;
+}
+
+.slides-block img {
+  height: 150px;
+  width: auto;
+  object-fit: contain;
+  background: #f9f9f9;
+  padding: 10px;
+  border-radius: 10px;
+  transition: transform 0.3s ease;
+}
+
+.slides-block img:hover {
+  transform: scale(1.1);
+}
+
+@keyframes scrollImages {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+/* ================= POPUP ================= */
+.popup {
+  position: fixed;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background: rgba(0,0,0,0.6);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 2000;
+}
+
+.popup-content {
+  background: #fff;
+  padding: 20px;
+  border-radius: 12px;
+  text-align: center;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+  animation: fadeIn 0.3s ease;
+}
+
+.popup-content button {
+  margin-top: 10px;
+  padding: 8px 12px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.popup-content button:first-of-type { background: #25D366; color: #fff; }
+.popup-content button:last-of-type { background: #ff4d4d; color: #fff; }
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: scale(0.8); }
+  to { opacity: 1; transform: scale(1); }
+}
+
+/* ================= COMMENTAIRES ================= */
+.commentaires {
+  max-width: 600px;
+  width: 95%;
+  margin: 40px auto;
+  padding: 20px;
+  background: #f9f9f9;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.commentaires h2 {
+  text-align: center;
+  margin-bottom: 10px;
+  color: #ff6f00;
+}
+
+.commentaire {
+  background: white;
+  padding: 15px;
+  border-radius: 8px;
+  margin-bottom: 15px;
+  border-left: 5px solid #ff6f00;
+}
+
+.ajout-commentaire form input,
+.ajout-commentaire form textarea,
+.ajout-commentaire form select {
+  width: 100%;
+  padding: 10px;
+  margin: 8px 0;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+}
+
+.ajout-commentaire form button {
+  background: #ff6f00;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.ajout-commentaire form button:hover {
+  background: #e65c00;
+}
+
+#toggleCommentaires {
+  display: block;
+  margin: 10px auto;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 6px;
+  background: #444;
+  color: white;
+  cursor: pointer;
+}
+
+#toggleCommentaires:hover {
+  background: #222;
+}
+
+/* ================= FOOTER ================= */
+footer {
+  text-align: center;
+  padding: 15px;
+  background: #222;
+  color: #fff;
+  margin-top: 40px;
+}
+
+footer p {
+  margin: 0;
+}
+
+/* ================= RESPONSIVE ================= */
+@media (max-width: 768px) {
+  .navbar { flex-direction: column; align-items: flex-start; }
+  .nav-links { flex-direction: column; width: 100%; gap: 10px; margin-top: 10px; }
+  .nav-links li { width: 100%; text-align: center; }
+
+  .product-grid { grid-template-columns: 1fr; }
+  .product img { height: auto; }
+
+  .about-container { flex-direction: column; text-align: center; }
+  .about-text { order: 2; }
+  .about-image { order: 1; margin-bottom: 20px; }
+
+  .contact-info { flex-direction: column; gap: 15px; }
+  .slides-block img { height: 100px; }
+  .commentaires { width: 95%; }
+}
+
+@media (max-width: 480px) {
+  body { font-size: 14px; }
+  h1, h2, h3 { font-size: 1.2rem; }
+  .btn { font-size: 12px; padding: 8px; }
+}
