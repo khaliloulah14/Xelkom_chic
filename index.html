@@ -12,9 +12,17 @@
   <header>
     <nav class="navbar">
       <div class="logo">
-        <img src="Xelcom_Chic-removebg-preview.png" alt="Xelcom_Chic-removebg-preview" height="150">
+        <img src="images/Xelcom_Chic-removebg-preview.png" alt="Xelcom_Chic-removebg-preview" height="150">
       </div>
-      <ul class="nav-links">
+      <button
+        class="menu-toggle"
+        id="menuToggle"
+        aria-expanded="false"
+        aria-controls="navLinks"
+        aria-label="Ouvrir le menu"
+        type="button"
+      >☰</button>
+      <ul class="nav-links" id="navLinks">
         <li><a href="#home">Accueil</a></li>
         <li><a href="#products">Produits</a></li>
         <li><a href="#contact">Contact</a></li>
@@ -23,6 +31,20 @@
     </nav>
   </header>
 
+  <!-- HERO -->
+  <section id="home" class="hero">
+    <div class="hero-media" aria-hidden="true">
+      <img src="images/yaye_fall.png" alt="Yaye Fall" />
+      <div class="hero-overlay"></div>
+    </div>
+
+    <div class="hero-content">
+      <h1>Bienvenue chez <span>Xelcom Chic</span></h1>
+      <p>Des vêtements et accessoires élégants, prêts à vous sublimer.</p>
+      <a href="#products" class="btn-hero">Découvrir nos produits</a>
+    </div>
+  </section>
+
   <!-- Section Produits -->
   <section id="products" class="products">
     <h2>Nos Produits</h2>
@@ -30,7 +52,7 @@
 
        <!-- Exemple produit -->
       <div class="product" data-name="ndijtlaay" data-price="12000">
-        <img src="ndijtlaay.jpg" alt="ndijtlaay">
+        <img src="images/ndijtlaay.jpg" alt="ndijtlaay">
         <h3>ndijtlaay</h3>
         <p>12000 FCFA</p>
         <button class="btn btn-whatsapp">
@@ -46,7 +68,7 @@
 
       <!-- Copie produit 2 -->
       <div class="product" data-name="Marakis" data-price="9000">
-        <img src="marakis2.jpg" alt="Marakis">
+        <img src="images/marakis2.jpg" alt="Marakis">
         <h3>Marakis</h3>
         <p>9000 FCFA</p>
         <button class="btn btn-whatsapp">
@@ -62,7 +84,7 @@
 
       <!-- Copie produit 3 -->
       <div class="product" data-name="Maxtoum" data-price="9000">
-        <img src="maxtoum.jpg" alt="Maxtoum">
+        <img src="images/maxtoum.jpg" alt="Maxtoum">
         <h3>Maxtoum</h3>
         <p>6000 à 12000 FCFA</p>
         <button class="btn btn-whatsapp">
@@ -77,7 +99,7 @@
       </div>
 
       <div class="product" data-name="Laafa" data-price="6000">
-        <img src="laafa0.avif" alt="Laafa">
+        <img src="images/laafa0.avif" alt="Laafa">
         <h3>Laafa</h3>
         <p>6000 FCFA</p>
         <button class="btn btn-whatsapp">
@@ -92,7 +114,7 @@
       </div>
 
       <div class="product" data-name="marakis" data-price="7000">
-        <img src="marakis10.jpg" alt="marakis">
+        <img src="images/marakis10.jpg" alt="marakis">
         <h3>marakis</h3>
         <p>7000 FCFA</p>
         <button class="btn btn-whatsapp">
@@ -107,7 +129,7 @@
       </div>
 
       <div class="product" data-name="Baye Lahad" data-price="1500">
-        <img src="Baye lahad.png" alt="Baye Lahad">
+        <img src="images/Baye lahad.png" alt="Baye Lahad">
         <h3>Baye Lahad 3pièces</h3>
         <p>30000 FCFA</p>
         <button class="btn btn-whatsapp">
@@ -123,7 +145,7 @@
 
       <!-- Ajoutez plus de produits ici -->
       <div class="product" data-name="Baye Lahad 2pièces" data-price="25000">
-        <img src="Baye lahad 2 Pièces.jpeg" alt="Baye Lahad 2pièces">
+        <img src="images/Baye lahad 2 Pièces.jpeg" alt="Baye Lahad 2pièces">
         <h3>Baye Lahad 2pièces</h3>
         <p>25000 FCFA</p>
         <button class="btn btn-whatsapp">
@@ -138,7 +160,7 @@
       </div>
 
       <div class="product" data-name="Attrape Voile" data-price="1000">
-        <img src="attrape voile.jpg" alt="attrape voile">
+        <img src="images/attrape voile.jpg" alt="attrape voile">
         <h3>Attrape Voile</h3>
         <p>250 FCFA</p>
         <button class="btn btn-whatsapp">
@@ -153,7 +175,7 @@
       </div>
 
       <div class="product" data-name="Jersey" data-price="1500">
-        <img src="Jersey.jpg" alt="Jersey">
+        <img src="images/Jersey.jpg" alt="Jersey">
         <h3>Jersey</h3>
         <p>1500 FCFA</p>
         <button class="btn btn-whatsapp">
@@ -168,7 +190,7 @@
       </div>
 
       <div class="product" data-name="Huile parfumé 6ml" data-price="1500">
-        <img src="huile parfumé 6ml.png" alt="Huile parfumé 6ml">
+        <img src="images/huile parfumé 6ml.png" alt="Huile parfumé 6ml">
         <h3>Huile parfumé 6ml</h3>
         <p>1500 FCFA</p>
         <button class="btn btn-whatsapp">
@@ -183,7 +205,7 @@
       </div>
 
       <div class="product" data-name="Kit de gloss" data-price="40000">
-        <img src="Kit de gloss.jpg" alt="Kit de gloss">
+        <img src="images/Kit de gloss.jpg" alt="Kit de gloss">
         <h3>Kit de gloss</h3>
         <p>40000 CFA</p>
         <button class="btn btn-whatsapp">
@@ -199,7 +221,7 @@
 
 
       <div class="product" data-name="Attache Packet" data-price="5300">
-        <img src="attache packet.webp" alt="Attache Packet">
+        <img src="images/attache packet.webp" alt="Attache Packet">
         <h3>Attache Packet</h3>
         <p>5300 CFA</p>
         <button class="btn btn-whatsapp">
@@ -214,7 +236,7 @@
       </div>
 
       <div class="product" data-name="Serviette Hygiénique" data-price="10000">
-        <img src="serviette hygienique.jpg" alt="Serviette Hygiénique">
+        <img src="images/serviette hygienique.jpg" alt="Serviette Hygiénique">
         <h3>Serviette Hygiénique</h3>
         <p>10000 CFA</p>
         <button class="btn btn-whatsapp">
@@ -262,18 +284,32 @@
 <div class="about-image">
   <div class="carousel-block">
     <div class="slides-block">
-      <img src="images__2_-removebg-preview.png" alt="Boutique Xelcom Chic">
-      <img src="images-removebg-preview.png" alt="Produits Xelcom Chic">
-      <img src="marakiss_2-removebg-preview.png" alt="Clients satisfaits">
-      <img src="huile parfumé 6ml.png" alt="Parfum">
-      <img src="hijab.png" alt="Hijab">
-      <img src="laafa2.jpg" alt="laafa">
-      <img src="marakis2.jpg" alt="laafa">
-      <img src="marakis6.jpg" alt="laafa">
-      <img src="marakis8.jpg" alt="laafa">
-      <img src="marakis7.jpg" alt="laafa">
-      <img src="serviette hygienique2.jpg" alt="Serviette Hygiénique">
-      <img src="serviette hygienique.jpg" alt="Serviette Hygiénique">
+      <img src="images/images__2_-removebg-preview.png" alt="Boutique Xelcom Chic">
+      <img src="images/images-removebg-preview.png" alt="Produits Xelcom Chic">
+      <img src="images/marakiss_2-removebg-preview.png" alt="Clients satisfaits">
+      <img src="images/huile parfumé 6ml.png" alt="Parfum">
+      <img src="images/hijab.png" alt="Hijab">
+      <img src="images/laafa2.jpg" alt="Laafa">
+      <img src="images/marakis2.jpg" alt="Marakis">
+      <img src="images/marakis6.jpg" alt="Marakis">
+      <img src="images/marakis8.jpg" alt="Marakis">
+      <img src="images/marakis7.jpg" alt="Marakis">
+      <img src="images/serviette hygienique2.jpg" alt="Serviette Hygiénique">
+      <img src="images/serviette hygienique.jpg" alt="Serviette Hygiénique">
+
+      <!-- Duplication pour une boucle fluide -->
+      <img src="images/images__2_-removebg-preview.png" alt="Boutique Xelcom Chic">
+      <img src="images/images-removebg-preview.png" alt="Produits Xelcom Chic">
+      <img src="images/marakiss_2-removebg-preview.png" alt="Clients satisfaits">
+      <img src="images/huile parfumé 6ml.png" alt="Parfum">
+      <img src="images/hijab.png" alt="Hijab">
+      <img src="images/laafa2.jpg" alt="Laafa">
+      <img src="images/marakis2.jpg" alt="Marakis">
+      <img src="images/marakis6.jpg" alt="Marakis">
+      <img src="images/marakis8.jpg" alt="Marakis">
+      <img src="images/marakis7.jpg" alt="Marakis">
+      <img src="images/serviette hygienique2.jpg" alt="Serviette Hygiénique">
+      <img src="images/serviette hygienique.jpg" alt="Serviette Hygiénique">
     </div>
   </div>
 </div>
@@ -330,14 +366,77 @@
 </section>
 
   <!-- Footer -->
-  <footer>
-    <h5><p>&copy; 2025 Xelcom_Chic. Tous droits réservés.</p></h5>
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div class="footer-col footer-brand">
+        <h3>Xelcom Chic</h3>
+        <p>Vêtements et accessoires élégants. Simple, rapide et sécurisé.</p>
+      </div>
+
+      <div class="footer-col">
+        <h4>Navigation</h4>
+        <a href="#home">Accueil</a>
+        <a href="#products">Produits</a>
+        <a href="#contact">Contact</a>
+        <a href="#about">À propos</a>
+      </div>
+
+      <div class="footer-col">
+        <h4>Liens</h4>
+        <a
+          href="https://wa.me/221785455797?text=Salam%20je%20veux%20commander%20chez%20Xelcom%20Chic"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          WhatsApp
+        </a>
+        <a href="mailto:sokhnas252@gmail.com">Email</a>
+        <a href="tel:+221785455797">Téléphone</a>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      &copy; 2025 Xelcom_Chic. Tous droits réservés.
+    </div>
   </footer>
+
+  <!-- Bouton WhatsApp flottant (bas à droite) -->
+  <a
+    class="floating-whatsapp"
+    href="https://wa.me/221785455797?text=Salam%20je%20veux%20commander%20chez%20Xelcom%20Chic"
+    target="_blank"
+    rel="noopener noreferrer"
+    aria-label="Contacter sur WhatsApp"
+  >
+    <img
+      src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg"
+      alt="WhatsApp"
+    >
+  </a>
 
 <script>
   const WA_NUMBER = "221785455797"; 
   const WAVE_NUMBER = "785455797";
   const OM_NUMBER = "785455797";
+
+  /*** ----------------- Menu mobile ----------------- ***/
+  const menuToggle = document.getElementById("menuToggle");
+  const navLinks = document.getElementById("navLinks");
+
+  if (menuToggle && navLinks) {
+    menuToggle.addEventListener("click", () => {
+      const isOpen = navLinks.classList.toggle("nav-links--open");
+      menuToggle.setAttribute("aria-expanded", isOpen ? "true" : "false");
+    });
+
+    // Ferme le menu quand on clique sur un lien (confort mobile)
+    navLinks.querySelectorAll("a").forEach(link => {
+      link.addEventListener("click", () => {
+        navLinks.classList.remove("nav-links--open");
+        menuToggle.setAttribute("aria-expanded", "false");
+      });
+    });
+  }
 
   // WhatsApp
   document.querySelectorAll(".btn-whatsapp").forEach(btn => {
