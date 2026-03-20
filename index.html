@@ -3,554 +3,286 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Xelcom_Chic</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <title>Xelcom Chic | Boutique Moderne | Sénégal</title>
   <link rel="stylesheet" href="style.css">
 </head>
-<body>
+<body id="home">
 
-  <!-- Navbar -->
-  <header>
-    <nav class="navbar">
-      <div class="logo">
-        <img src="images/Xelcom_Chic-removebg-preview.png" alt="Xelcom_Chic-removebg-preview" height="150">
-      </div>
-      <button
-        class="menu-toggle"
-        id="menuToggle"
-        aria-expanded="false"
-        aria-controls="navLinks"
-        aria-label="Ouvrir le menu"
-        type="button"
-      >☰</button>
-      <ul class="nav-links" id="navLinks">
-        <li><a href="#home">Accueil</a></li>
-        <li><a href="#products">Produits</a></li>
-        <li><a href="#contact">Contact</a></li>
-        <li><a href="#about">À propos</a></li>
-      </ul>
-    </nav>
-  </header>
-
-  <!-- HERO -->
-  <section id="home" class="hero">
-    <div class="hero-media" aria-hidden="true">
-      <img src="images/yaye_fall.png" alt="Yaye Fall" />
-      <div class="hero-overlay"></div>
-    </div>
-
-    <div class="hero-content">
-      <h1>Bienvenue chez <span>Xelcom Chic</span></h1>
-      <p>Des vêtements et accessoires élégants, prêts à vous sublimer.</p>
-      <a href="#products" class="btn-hero">Découvrir nos produits</a>
-    </div>
-  </section>
-
-  <!-- Section Produits -->
-  <section id="products" class="products">
-    <h2>Nos Produits</h2>
-    <div class="product-grid">
-
-       <!-- Exemple produit -->
-      <div class="product" data-name="ndijtlaay" data-price="12000">
-        <img src="images/ndijtlaay.jpg" alt="ndijtlaay">
-        <h3>ndijtlaay</h3>
-        <p>12000 FCFA</p>
-        <button class="btn btn-whatsapp">
-          <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp"> WhatsApp
-        </button>
-        <button class="btn btn-wave">
-          <img src="https://play-lh.googleusercontent.com/B2sfLVgRWgV_bk5rtF51w6AieJWXc0qWbyWoaA8pMNp-is41AmvhJYVr95Dq9hT97Es=w240-h480-rw" alt="Wave"> Wave
-        </button>
-        <button class="btn btn-om">
-          <img src="https://change.sn/assets/images/orange_ci.png" alt="OM"> Orange Money
-        </button>
-      </div>
-
-      <!-- Copie produit 2 -->
-      <div class="product" data-name="Marakis" data-price="9000">
-        <img src="images/marakis2.jpg" alt="Marakis">
-        <h3>Marakis</h3>
-        <p>9000 FCFA</p>
-        <button class="btn btn-whatsapp">
-          <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp"> WhatsApp
-        </button>
-        <button class="btn btn-wave">
-          <img src="https://play-lh.googleusercontent.com/B2sfLVgRWgV_bk5rtF51w6AieJWXc0qWbyWoaA8pMNp-is41AmvhJYVr95Dq9hT97Es=w240-h480-rw" alt="Wave"> Wave
-        </button>
-        <button class="btn btn-om">
-          <img src="https://change.sn/assets/images/orange_ci.png" alt="OM"> Orange Money
-        </button>
-      </div>
-
-      <!-- Copie produit 3 -->
-      <div class="product" data-name="Maxtoum" data-price="9000">
-        <img src="images/maxtoum.jpg" alt="Maxtoum">
-        <h3>Maxtoum</h3>
-        <p>6000 à 12000 FCFA</p>
-        <button class="btn btn-whatsapp">
-          <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp"> WhatsApp
-        </button>
-        <button class="btn btn-wave">
-          <img src="https://play-lh.googleusercontent.com/B2sfLVgRWgV_bk5rtF51w6AieJWXc0qWbyWoaA8pMNp-is41AmvhJYVr95Dq9hT97Es=w240-h480-rw" alt="Wave"> Wave
-        </button>
-        <button class="btn btn-om">
-          <img src="https://change.sn/assets/images/orange_ci.png" alt="OM"> Orange Money
-        </button>
-      </div>
-
-      <div class="product" data-name="Laafa" data-price="6000">
-        <img src="images/laafa0.avif" alt="Laafa">
-        <h3>Laafa</h3>
-        <p>6000 FCFA</p>
-        <button class="btn btn-whatsapp">
-          <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp"> WhatsApp
-        </button>
-        <button class="btn btn-wave">
-          <img src="https://play-lh.googleusercontent.com/B2sfLVgRWgV_bk5rtF51w6AieJWXc0qWbyWoaA8pMNp-is41AmvhJYVr95Dq9hT97Es=w240-h480-rw" alt="Wave"> Wave
-        </button>
-        <button class="btn btn-om">
-          <img src="https://change.sn/assets/images/orange_ci.png" alt="OM"> Orange Money
-        </button>
-      </div>
-
-      <div class="product" data-name="marakis" data-price="7000">
-        <img src="images/marakis10.jpg" alt="marakis">
-        <h3>marakis</h3>
-        <p>7000 FCFA</p>
-        <button class="btn btn-whatsapp">
-          <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp"> WhatsApp
-        </button>
-        <button class="btn btn-wave">
-          <img src="https://play-lh.googleusercontent.com/B2sfLVgRWgV_bk5rtF51w6AieJWXc0qWbyWoaA8pMNp-is41AmvhJYVr95Dq9hT97Es=w240-h480-rw" alt="Wave"> Wave
-        </button>
-        <button class="btn btn-om">
-          <img src="https://change.sn/assets/images/orange_ci.png" alt="OM"> Orange Money
-        </button>
-      </div>
-
-      <div class="product" data-name="Baye Lahad" data-price="1500">
-        <img src="images/Baye lahad.png" alt="Baye Lahad">
-        <h3>Baye Lahad 3pièces</h3>
-        <p>30000 FCFA</p>
-        <button class="btn btn-whatsapp">
-          <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp"> WhatsApp
-        </button>
-        <button class="btn btn-wave">
-          <img src="https://play-lh.googleusercontent.com/B2sfLVgRWgV_bk5rtF51w6AieJWXc0qWbyWoaA8pMNp-is41AmvhJYVr95Dq9hT97Es=w240-h480-rw" alt="Wave"> Wave
-        </button>
-        <button class="btn btn-om">
-          <img src="https://change.sn/assets/images/orange_ci.png" alt="OM"> Orange Money
-        </button>
-      </div>
-
-      <!-- Ajoutez plus de produits ici -->
-      <div class="product" data-name="Baye Lahad 2pièces" data-price="25000">
-        <img src="images/Baye lahad 2 Pièces.jpeg" alt="Baye Lahad 2pièces">
-        <h3>Baye Lahad 2pièces</h3>
-        <p>25000 FCFA</p>
-        <button class="btn btn-whatsapp">
-          <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp"> WhatsApp
-        </button>
-        <button class="btn btn-wave">
-          <img src="https://play-lh.googleusercontent.com/B2sfLVgRWgV_bk5rtF51w6AieJWXc0qWbyWoaA8pMNp-is41AmvhJYVr95Dq9hT97Es=w240-h480-rw" alt="Wave"> Wave
-        </button>
-        <button class="btn btn-om">
-          <img src="https://change.sn/assets/images/orange_ci.png" alt="OM"> Orange Money
-        </button>
-      </div>
-
-      <div class="product" data-name="Attrape Voile" data-price="1000">
-        <img src="images/attrape voile.jpg" alt="attrape voile">
-        <h3>Attrape Voile</h3>
-        <p>250 FCFA</p>
-        <button class="btn btn-whatsapp">
-          <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp"> WhatsApp
-        </button>
-        <button class="btn btn-wave">
-          <img src="https://play-lh.googleusercontent.com/B2sfLVgRWgV_bk5rtF51w6AieJWXc0qWbyWoaA8pMNp-is41AmvhJYVr95Dq9hT97Es=w240-h480-rw" alt="Wave"> Wave
-        </button>
-        <button class="btn btn-om">
-          <img src="https://change.sn/assets/images/orange_ci.png" alt="OM"> Orange Money
-        </button>
-      </div>
-
-      <div class="product" data-name="Jersey" data-price="1500">
-        <img src="images/Jersey.jpg" alt="Jersey">
-        <h3>Jersey</h3>
-        <p>1500 FCFA</p>
-        <button class="btn btn-whatsapp">
-          <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp"> WhatsApp
-        </button>
-        <button class="btn btn-wave">
-          <img src="https://play-lh.googleusercontent.com/B2sfLVgRWgV_bk5rtF51w6AieJWXc0qWbyWoaA8pMNp-is41AmvhJYVr95Dq9hT97Es=w240-h480-rw" alt="Wave"> Wave
-        </button>
-        <button class="btn btn-om">
-          <img src="https://change.sn/assets/images/orange_ci.png" alt="OM"> Orange Money
-        </button>
-      </div>
-
-      <div class="product" data-name="Huile parfumé 6ml" data-price="1500">
-        <img src="images/huile parfumé 6ml.png" alt="Huile parfumé 6ml">
-        <h3>Huile parfumé 6ml</h3>
-        <p>1500 FCFA</p>
-        <button class="btn btn-whatsapp">
-          <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp"> WhatsApp
-        </button>
-        <button class="btn btn-wave">
-          <img src="https://play-lh.googleusercontent.com/B2sfLVgRWgV_bk5rtF51w6AieJWXc0qWbyWoaA8pMNp-is41AmvhJYVr95Dq9hT97Es=w240-h480-rw" alt="Wave"> Wave
-        </button>
-        <button class="btn btn-om">
-          <img src="https://change.sn/assets/images/orange_ci.png" alt="OM"> Orange Money
-        </button>
-      </div>
-
-      <div class="product" data-name="Kit de gloss" data-price="40000">
-        <img src="images/Kit de gloss.jpg" alt="Kit de gloss">
-        <h3>Kit de gloss</h3>
-        <p>40000 CFA</p>
-        <button class="btn btn-whatsapp">
-          <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp"> WhatsApp
-        </button>
-        <button class="btn btn-wave">
-          <img src="https://play-lh.googleusercontent.com/B2sfLVgRWgV_bk5rtF51w6AieJWXc0qWbyWoaA8pMNp-is41AmvhJYVr95Dq9hT97Es=w240-h480-rw" alt="Wave"> Wave
-        </button>
-        <button class="btn btn-om">
-          <img src="https://change.sn/assets/images/orange_ci.png" alt="OM"> Orange Money
-        </button>
-      </div>
-
-
-      <div class="product" data-name="Attache Packet" data-price="5300">
-        <img src="images/attache packet.webp" alt="Attache Packet">
-        <h3>Attache Packet</h3>
-        <p>5300 CFA</p>
-        <button class="btn btn-whatsapp">
-          <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp"> WhatsApp
-        </button>
-        <button class="btn btn-wave">
-          <img src="https://play-lh.googleusercontent.com/B2sfLVgRWgV_bk5rtF51w6AieJWXc0qWbyWoaA8pMNp-is41AmvhJYVr95Dq9hT97Es=w240-h480-rw" alt="Wave"> Wave
-        </button>
-        <button class="btn btn-om">
-          <img src="https://change.sn/assets/images/orange_ci.png" alt="OM"> Orange Money
-        </button>
-      </div>
-
-      <div class="product" data-name="Serviette Hygiénique" data-price="10000">
-        <img src="images/serviette hygienique.jpg" alt="Serviette Hygiénique">
-        <h3>Serviette Hygiénique</h3>
-        <p>10000 CFA</p>
-        <button class="btn btn-whatsapp">
-          <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp"> WhatsApp
-        </button>
-        <button class="btn btn-wave">
-          <img src="https://play-lh.googleusercontent.com/B2sfLVgRWgV_bk5rtF51w6AieJWXc0qWbyWoaA8pMNp-is41AmvhJYVr95Dq9hT97Es=w240-h480-rw" alt="Wave"> Wave
-        </button>
-        <button class="btn btn-om">
-          <img src="https://change.sn/assets/images/orange_ci.png" alt="OM"> Orange Money
-        </button>
-      </div>
-    </div>
-  </section>
-
-<!-- Contact -->
-<section id="contact" class="contact">
-  <h2>Contact</h2>
-
-  <div class="contact-info">
-    <!-- Telephone -->
-    <a href="https://wa.me/221785455797" target="_blank" class="contact-item">
-      <img src="data:image/png;base64,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" alt="WhatsApp">
-      <h3><span>+221 78 545 57 97</span></h3>
+<header>
+  <nav class="navbar container">
+    <a href="#home" class="logo-container">
+      <img src="images/Xelcom_Chic-removebg-preview.png" alt="Xelcom Chic" height="70">
     </a>
 
-    <!-- localisation -->
-    <div class="contact-item">
-      <img src="https://img.freepik.com/vecteurs-premium/vecteur-localisation-du-logo-carte_607588-10379.jpg" alt="localisation">
-      <h3><span>Petit Mbao</span></h3>
+    <div class="nav-main-actions">
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#home"><i class="fas fa-home"></i> Accueil</a></li>
+        <li><a href="#products"><i class="fas fa-shopping-bag"></i> Produits</a></li>
+        <li><a href="#about"><i class="fas fa-users"></i> À propos</a></li>
+        <li><a href="#contact"><i class="fas fa-envelope"></i> Contact</a></li>
+      </ul>
+
+      <div class="nav-right">
+        <div class="account">
+          <button class="account-btn" id="account-btn">
+            <i class="fas fa-user-circle"></i> Compte
+          </button>
+          <div class="account-menu" id="account-menu">
+            <a href="#"><i class="fas fa-sign-in-alt"></i> Connexion</a>
+            <a href="#"><i class="fas fa-list-ul"></i> Commandes</a>
+            <a href="#"><i class="fas fa-heart"></i> Favoris</a>
+          </div>
+        </div>
+        <button class="menu-toggle" id="menu-toggle">
+          <i class="fas fa-bars"></i>
+        </button>
+      </div>
+    </div>
+  </nav>
+</header>
+
+<section class="hero">
+  <div class="container hero-wrapper">
+    <div class="hero-content">
+      <span class="hero-subtitle">Exclusivité & Tradition</span>
+      <h1>L'Élégance Signature de <span>Xelcom Chic</span></h1>
+      <p>Découvrez une collection où le luxe rencontre l'authenticité sénégalaise. Des pièces uniques conçues pour ceux qui osent l'excellence.</p>
+      
+      <div class="hero-actions">
+        <a href="#products" class="btn-primary">Explorer la collection</a>
+        <a href="#about" class="btn-secondary">Notre histoire</a>
+      </div>
+
+      <div class="hero-stats">
+        <div class="stat-item"><strong>500+</strong> <span>Clients satisfaits</span></div>
+        <div class="stat-item"><strong>24h</strong> <span>Livraison Dakar</span></div>
+      </div>
     </div>
 
-    <!-- eMail -->
-    <div class="contact-item">
-      <img src="data:image/png;base64,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" alt="eMail">
-      <h3><span>Sokhnas252@gmail.com</span></h3>
+    <div class="hero-visual">
+      <div class="image-stack">
+        <img src="images/yaye_fall.png" alt="Yaye Fall Collection" class="main-img">
+        <div class="img-accent"></div> </div>
     </div>
   </div>
+</section>
+
+<section id="products" class="products container">
+    <h2><i class="fas fa-shopping-cart"></i> Notre Boutique</h2>
+
+    <div class="product-category">
+        <h3 class="category-title"><i class="fas fa-tshirt"></i> Prêt-à-porter</h3>
+        <div class="product-grid">
+            <div class="product">
+                <div class="product-image">
+                    <img src="images/ndijtlaay.jpg" alt="Ndijtlaay">
+                    <div class="product-overlay">
+                        <a href="#" class="btn-detail">Détails</a>
+                    </div>
+                </div>
+                <h3>Ndijtlaay</h3>
+                <p class="price">12 000 FCFA</p>
+            </div>
+            <div class="product">
+                <div class="product-image">
+                    <img src="images/marakis2.jpg" alt="Marakis">
+                    <div class="product-overlay">
+                        <a href="#" class="btn-detail">Détails</a>
+                    </div>
+                </div>
+                <h3>Marakis Premium</h3>
+                <p class="price">15 000 FCFA</p>
+            </div>
+            </div>
+    </div>
+
+    <div class="product-category">
+        <h3 class="category-title"><i class="fas fa-hat-cowboy"></i> Accessoires</h3>
+        <div class="product-grid">
+            <div class="product">
+                <div class="product-image">
+                    <img src="images/caps.jpg" alt="Casquettes">
+                    <div class="product-overlay">
+                        <a href="#" class="btn-detail">Détails</a>
+                    </div>
+                </div>
+                <h3>Casquette HDX</h3>
+                <p class="price">5 000 FCFA</p>
+            </div>
+        </div>
+    </div>
 </section>
 
 <section id="about" class="about">
-  <div class="about-container">
-    
-<!-- Carrousel d'images en bloc -->
-<div class="about-image">
-  <div class="carousel-block">
-    <div class="slides-block">
-      <img src="images/images__2_-removebg-preview.png" alt="Boutique Xelcom Chic">
-      <img src="images/images-removebg-preview.png" alt="Produits Xelcom Chic">
-      <img src="images/marakiss_2-removebg-preview.png" alt="Clients satisfaits">
-      <img src="images/huile parfumé 6ml.png" alt="Parfum">
-      <img src="images/hijab.png" alt="Hijab">
-      <img src="images/laafa2.jpg" alt="Laafa">
-      <img src="images/marakis2.jpg" alt="Marakis">
-      <img src="images/marakis6.jpg" alt="Marakis">
-      <img src="images/marakis8.jpg" alt="Marakis">
-      <img src="images/marakis7.jpg" alt="Marakis">
-      <img src="images/serviette hygienique2.jpg" alt="Serviette Hygiénique">
-      <img src="images/serviette hygienique.jpg" alt="Serviette Hygiénique">
+  <div class="container">
+    <div class="about-wrapper">
+      <div class="about-visual">
+        <div class="image-container">
+          <img src="images/atelier_xelcom.jpg" alt="Notre Atelier" class="about-img">
+          <div class="experience-badge">
+            <span class="years">5+</span>
+            <span class="text">Ans de Passion</span>
+          </div>
+        </div>
+      </div>
 
-      <!-- Duplication pour une boucle fluide -->
-      <img src="images/images__2_-removebg-preview.png" alt="Boutique Xelcom Chic">
-      <img src="images/images-removebg-preview.png" alt="Produits Xelcom Chic">
-      <img src="images/marakiss_2-removebg-preview.png" alt="Clients satisfaits">
-      <img src="images/huile parfumé 6ml.png" alt="Parfum">
-      <img src="images/hijab.png" alt="Hijab">
-      <img src="images/laafa2.jpg" alt="Laafa">
-      <img src="images/marakis2.jpg" alt="Marakis">
-      <img src="images/marakis6.jpg" alt="Marakis">
-      <img src="images/marakis8.jpg" alt="Marakis">
-      <img src="images/marakis7.jpg" alt="Marakis">
-      <img src="images/serviette hygienique2.jpg" alt="Serviette Hygiénique">
-      <img src="images/serviette hygienique.jpg" alt="Serviette Hygiénique">
-    </div>
-  </div>
-</div>
+      <div class="about-content">
+        <span class="section-subtitle">Notre Histoire</span>
+        <h2>Plus qu'une Boutique, <br><span>Un Style de Vie</span></h2>
+        <p>
+          Fondée au cœur de <strong>Petit Mbao</strong>, Xelcom Chic est née d'une ambition simple : 
+          allier la noblesse des tissus traditionnels sénégalais à la modernité du prêt-à-porter urbain.
+        </p>
+        <p>
+          Chaque pièce de notre collection est sélectionnée avec soin pour refléter l'élégance 
+          et le dynamisme de la jeunesse sénégalaise. Nous ne vendons pas que des vêtements, 
+          nous célébrons une identité.
+        </p>
 
+        <div class="values-grid">
+          <div class="value-item">
+            <i class="fas fa-gem"></i>
+            <div>
+              <h4>Qualité Premium</h4>
+              <p>Tissus durables et finitions impeccables.</p>
+            </div>
+          </div>
+          <div class="value-item">
+            <i class="fas fa-truck-fast"></i>
+            <div>
+              <h4>Logistique Fiable</h4>
+              <p>Livraison rapide partout au Sénégal.</p>
+            </div>
+          </div>
+        </div>
 
-    <!-- Texte À propos -->
-    <div class="about-text">
-      <h2>À propos de <span>Xelcom Chic</span></h2>
-      <p>
-        <strong>Xelcom Chic</strong> est une boutique moderne spécialisée dans la vente de vêtements et accessoires élégants.  
-        Nous nous engageons à offrir à nos clients des produits de qualité, tendances et accessibles à tous.
-      </p>
-      <p>
-        Située à <strong>Petit Mbao – arrêt Gris Bordeaux</strong>, notre boutique propose une expérience d’achat simple, rapide et sécurisée.  
-        Vous pouvez régler vos achats directement via <em>Wave</em>, <em>Orange Money</em> ou encore nous contacter par <em>WhatsApp</em>.
-      </p>
-      <p>
-        Notre mission est de vous apporter le meilleur du style et du confort, tout en restant proche de vous grâce à nos canaux de contact rapides.
-      </p>
-      <a href="#products" class="btn-about">Découvrir nos produits</a>
+        <a href="#contact" class="btn-outline">En savoir plus sur nous</a>
+      </div>
     </div>
   </div>
 </section>
-<!-- Section Commentaires -->
-<section id="commentaires" class="commentaires">
-  <h2>💬 Avis de nos clients</h2>
 
-  <!-- Compteur -->
-  <p id="compteurCommentaires" style="text-align:center; font-weight:bold; color:#555;"></p>
+  <section id="contact" class="contact">
+  <div class="container">
+    <div class="contact-grid">
+      
+      <div class="contact-info-side">
+        <span class="section-subtitle">Nous trouver</span>
+        <h2>Restons en <span>Contact</span></h2>
+        <p>Une question sur une taille ou une commande ? Notre équipe à Petit Mbao vous répond sous 24h.</p>
+        
+        <div class="contact-details">
+          <div class="detail-card">
+            <i class="fas fa-map-marker-alt"></i>
+            <div>
+              <h4>Showroom</h4>
+              <p>Petit Mbao, Arrêt Gris Bordeaux, Sénégal</p>
+            </div>
+          </div>
+          
+          <div class="detail-card">
+            <i class="fas fa-phone-alt"></i>
+            <div>
+              <h4>Téléphone & WhatsApp</h4>
+              <p>+221 78 545 57 97</p>
+            </div>
+          </div>
 
-  <!-- Zone où les commentaires vont apparaître -->
-  <div id="liste-commentaires"></div>
+          <div class="detail-card">
+            <i class="fas fa-clock"></i>
+            <div>
+              <h4>Horaires</h4>
+              <p>Lun - Sam : 09h00 - 20h00</p>
+            </div>
+          </div>
+        </div>
+      </div>
 
-  <!-- Bouton pour afficher/masquer les anciens commentaires -->
-  <button id="toggleCommentaires" style="display:none;">Voir plus</button>
+      <div class="contact-form-side">
+        <form class="pro-form">
+          <div class="form-group">
+            <label>Nom complet</label>
+            <input type="text" placeholder="Ex: Moussa Diop" required>
+          </div>
+          <div class="form-group">
+            <label>Email</label>
+            <input type="email" placeholder="moussa@email.com" required>
+          </div>
+          <div class="form-group">
+            <label>Votre message</label>
+            <textarea placeholder="Comment pouvons-nous vous aider ?"></textarea>
+          </div>
+          <button type="submit" class="btn-submit">
+            Envoyer le message <i class="fas fa-paper-plane"></i>
+          </button>
+        </form>
+      </div>
 
-  <!-- Formulaire pour laisser un nouveau commentaire -->
-  <div class="ajout-commentaire">
-    <h3>Laisser un commentaire</h3>
-    <form id="form-commentaire">
-      <input type="text" id="nom" placeholder="Votre nom" required>
-      <textarea id="message" placeholder="Votre avis..." required></textarea>
-      <select id="note" required>
-        <option value="">⭐ Choisir une note</option>
-        <option value="⭐️">⭐️</option>
-        <option value="⭐️⭐️">⭐️⭐️</option>
-        <option value="⭐️⭐️⭐️">⭐️⭐️⭐️</option>
-        <option value="⭐️⭐️⭐️⭐️">⭐️⭐️⭐️⭐️</option>
-        <option value="⭐️⭐️⭐️⭐️⭐️">⭐️⭐️⭐️⭐️⭐️</option>
-      </select>
-      <button type="submit">Publier</button>
-    </form>
+    </div>
   </div>
 </section>
 
-  <!-- Footer -->
+<a href="https://wa.me/221785455797" target="_blank" class="whatsapp-global">
+    <i class="fab fa-whatsapp"></i>
+    <span class="whatsapp-label">Discuter avec nous</span>
+</a>
+
   <footer class="site-footer">
     <div class="footer-inner">
       <div class="footer-col footer-brand">
         <h3>Xelcom Chic</h3>
-        <p>Vêtements et accessoires élégants. Simple, rapide et sécurisé.</p>
+        <p>L'élégance à la sénégalaise, à portée de clic.</p>
       </div>
-
       <div class="footer-col">
         <h4>Navigation</h4>
         <a href="#home">Accueil</a>
         <a href="#products">Produits</a>
-        <a href="#contact">Contact</a>
         <a href="#about">À propos</a>
+        <a href="#contact">Contact</a>
       </div>
-
       <div class="footer-col">
-        <h4>Liens</h4>
-        <a
-          href="https://wa.me/221785455797?text=Salam%20je%20veux%20commander%20chez%20Xelcom%20Chic"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          WhatsApp
-        </a>
-        <a href="mailto:sokhnas252@gmail.com">Email</a>
-        <a href="tel:+221785455797">Téléphone</a>
+        <h4>Suivez-nous</h4>
+        <a href="#">Instagram</a>
+        <a href="#">Facebook</a>
+        <a href="#">TikTok</a>
       </div>
     </div>
-
     <div class="footer-bottom">
-      &copy; 2025 Xelcom_Chic. Tous droits réservés.
+      <p>© 2026 Xelcom Chic. Tous droits réservés.</p>
     </div>
   </footer>
 
-  <!-- Bouton WhatsApp flottant (bas à droite) -->
-  <a
-    class="floating-whatsapp"
-    href="https://wa.me/221785455797?text=Salam%20je%20veux%20commander%20chez%20Xelcom%20Chic"
-    target="_blank"
-    rel="noopener noreferrer"
-    aria-label="Contacter sur WhatsApp"
-  >
-    <img
-      src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg"
-      alt="WhatsApp"
-    >
-  </a>
 
-<script>
-  const WA_NUMBER = "221785455797"; 
-  const WAVE_NUMBER = "785455797";
-  const OM_NUMBER = "785455797";
+  <script src="script.js"></script>
+  <script>
+    // --- Menu Toggle Mobile ---
+const menuToggle = document.getElementById('menu-toggle');
+const navLinks = document.getElementById('nav-links');
 
-  /*** ----------------- Menu mobile ----------------- ***/
-  const menuToggle = document.getElementById("menuToggle");
-  const navLinks = document.getElementById("navLinks");
+menuToggle.addEventListener('click', () => {
+    navLinks.classList.toggle('active');
+});
 
-  if (menuToggle && navLinks) {
-    menuToggle.addEventListener("click", () => {
-      const isOpen = navLinks.classList.toggle("nav-links--open");
-      menuToggle.setAttribute("aria-expanded", isOpen ? "true" : "false");
-    });
+// --- Menu Compte ---
+const accountBtn = document.getElementById('account-btn');
+const accountMenu = document.getElementById('account-menu');
 
-    // Ferme le menu quand on clique sur un lien (confort mobile)
-    navLinks.querySelectorAll("a").forEach(link => {
-      link.addEventListener("click", () => {
-        navLinks.classList.remove("nav-links--open");
-        menuToggle.setAttribute("aria-expanded", "false");
-      });
-    });
-  }
+accountBtn.addEventListener('click', (e) => {
+    e.stopPropagation();
+    accountMenu.classList.toggle('open');
+});
 
-  // WhatsApp
-  document.querySelectorAll(".btn-whatsapp").forEach(btn => {
-    btn.addEventListener("click", () => {
-      const product = btn.closest(".product");
-      const name = product.dataset.name;
-      const price = product.dataset.price;
-      window.open(
-        `https://wa.me/${WA_NUMBER}?text=« Salam 👋, je veux acheter ${name} à ${price} FCFA. Comment faire pour la livraison et le paiement ? »`,
-        "_blank"
-      );
-    });
-  });
+// Fermer le menu si on clique ailleurs
+window.addEventListener('click', () => {
+    accountMenu.classList.remove('open');
+});
 
-  // Wave
-  document.querySelectorAll(".btn-wave").forEach(btn => {
-    btn.addEventListener("click", () => {
-      showPaymentPopup("Wave", WAVE_NUMBER);
-    });
-  });
-
-  // Orange Money
-  document.querySelectorAll(".btn-om").forEach(btn => {
-    btn.addEventListener("click", () => {
-      showPaymentPopup("Orange Money", OM_NUMBER);
-    });
-  });
-
-  // Fonction popup paiement
-  function showPaymentPopup(method, number) {
-    const popup = document.createElement("div");
-    popup.className = "popup";
-    popup.innerHTML = `
-      <div class="popup-content">
-        <h3>${method}</h3>
-        <p>Numéro : <strong>${number}</strong></p>
-        <button onclick="navigator.clipboard.writeText('${number}')">📋 Copier</button>
-        <button onclick="this.closest('.popup').remove()">❌ Fermer</button>
-      </div>
-    `;
-    document.body.appendChild(popup);
-  }
-
-  /*** ----------------- Commentaires ----------------- ***/
-  const listeCommentaires = document.getElementById("liste-commentaires");
-  const form = document.getElementById("form-commentaire");
-  const toggleBtn = document.getElementById("toggleCommentaires");
-  const compteur = document.getElementById("compteurCommentaires");
-  const LIMITE = 5;
-
-  let afficherTous = false; // état du bouton
-
-  // Charger les commentaires depuis localStorage
-  function chargerCommentaires() {
-    let commentaires = JSON.parse(localStorage.getItem("commentaires")) || [];
-
-    // Mettre à jour le compteur
-    compteur.textContent = `${commentaires.length} avis au total`;
-
-    listeCommentaires.innerHTML = ""; // vider avant rechargement
-
-    // Si on affiche tout → tous les commentaires
-    // Sinon → uniquement les derniers "LIMITE"
-    let aAfficher = afficherTous ? commentaires : commentaires.slice(-LIMITE);
-
-    aAfficher.forEach(c => {
-      let div = document.createElement("div");
-      div.classList.add("commentaire");
-      div.innerHTML = `
-        <p>${c.note}</p>
-        <p><strong>${c.nom}</strong> : "${c.message}"</p>
-      `;
-      listeCommentaires.appendChild(div);
-    });
-
-    // Afficher ou masquer le bouton selon le nombre de commentaires
-    if (commentaires.length > LIMITE) {
-      toggleBtn.style.display = "block";
-      toggleBtn.textContent = afficherTous ? "Voir moins" : "Voir plus";
-    } else {
-      toggleBtn.style.display = "none";
-    }
-  }
-
-  // Sauvegarder un nouveau commentaire
-  function sauvegarderCommentaire(nom, message, note) {
-    let commentaires = JSON.parse(localStorage.getItem("commentaires")) || [];
-    commentaires.push({ nom, message, note });
-    localStorage.setItem("commentaires", JSON.stringify(commentaires));
-  }
-
-  // Gestion de l’envoi du formulaire
-  form.addEventListener("submit", function(e) {
-    e.preventDefault();
-
-    let nom = document.getElementById("nom").value;
-    let message = document.getElementById("message").value;
-    let note = document.getElementById("note").value;
-
-    if (nom && message && note) {
-      sauvegarderCommentaire(nom, message, note);
-      chargerCommentaires(); // recharger la liste
-      form.reset();
-    }
-  });
-
-  // Gestion du bouton Voir plus / Voir moins
-  toggleBtn.addEventListener("click", function() {
-    afficherTous = !afficherTous; // on inverse l'état
-    chargerCommentaires();
-  });
-
-  // Charger les commentaires existants au démarrage
-  chargerCommentaires();
-</script>
+// --- Gestion Paiement (Popup déjà existante) ---
+function showPaymentPopup(method, number) {
+    alert(`Paiement via ${method}\nNuméro: ${number}\n(Copié dans le presse-papier)`);
+    navigator.clipboard.writeText(number);
+}
+  </script>
 </body>
 </html>
