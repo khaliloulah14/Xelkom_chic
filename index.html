@@ -3,204 +3,408 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
   <title>Xelcom Chic | Boutique Moderne | Sénégal</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
 <body id="home">
 
+<!-- ===== HEADER ===== -->
 <header>
   <nav class="navbar container">
     <a href="#home" class="logo-container">
-      <img src="images/Xelcom_Chic-removebg-preview.png" alt="Xelcom Chic" height="70">
+      <img src="images/Xelcom_Chic-removebg-preview.png" alt="Xelcom Chic">
     </a>
-
-    <div class="nav-main-actions">
-      <ul class="nav-links" id="nav-links">
-        <li><a href="#home"><i class="fas fa-home"></i> Accueil</a></li>
-        <li><a href="#products"><i class="fas fa-shopping-bag"></i> Produits</a></li>
-        <li><a href="#about"><i class="fas fa-users"></i> À propos</a></li>
-        <li><a href="#contact"><i class="fas fa-envelope"></i> Contact</a></li>
-      </ul>
-
-      <div class="nav-right">
-        <div class="account">
-          <button class="account-btn" id="account-btn">
-            <i class="fas fa-user-circle"></i> Compte
-          </button>
-          <div class="account-menu" id="account-menu">
-            <a href="#"><i class="fas fa-sign-in-alt"></i> Connexion</a>
-            <a href="#"><i class="fas fa-list-ul"></i> Commandes</a>
-            <a href="#"><i class="fas fa-heart"></i> Favoris</a>
-          </div>
-        </div>
-        <button class="menu-toggle" id="menu-toggle">
-          <i class="fas fa-bars"></i>
+    <ul class="nav-links" id="nav-links">
+      <li><a href="#home"><i class="fas fa-home"></i> Accueil</a></li>
+      <li><a href="#products"><i class="fas fa-shopping-bag"></i> Boutique</a></li>
+      <li><a href="#about"><i class="fas fa-users"></i> À propos</a></li>
+      <li><a href="#contact"><i class="fas fa-envelope"></i> Contact</a></li>
+    </ul>
+    <div class="nav-right">
+      <div class="account">
+        <button class="account-btn" id="account-btn">
+          <i class="fas fa-user-circle"></i> Compte
         </button>
+        <div class="account-menu" id="account-menu">
+          <a href="#"><i class="fas fa-sign-in-alt"></i> Connexion</a>
+          <a href="#"><i class="fas fa-list-ul"></i> Mes commandes</a>
+          <a href="#"><i class="fas fa-heart"></i> Favoris</a>
+        </div>
       </div>
+      <button class="menu-toggle" id="menu-toggle">
+        <i class="fas fa-bars"></i>
+      </button>
     </div>
   </nav>
 </header>
 
+<!-- ===== HERO ===== -->
 <section class="hero">
   <div class="container hero-wrapper">
     <div class="hero-content">
-      <span class="hero-subtitle">Exclusivité & Tradition</span>
+      <span class="hero-subtitle">Exclusivité &amp; Tradition Sénégalaise</span>
       <h1>L'Élégance Signature de <span>Xelcom Chic</span></h1>
       <p>Découvrez une collection où le luxe rencontre l'authenticité sénégalaise. Des pièces uniques conçues pour ceux qui osent l'excellence.</p>
-      
       <div class="hero-actions">
-        <a href="#products" class="btn-primary">Explorer la collection</a>
-        <a href="#about" class="btn-secondary">Notre histoire</a>
+        <a href="#products" class="btn-primary"><i class="fas fa-shopping-bag"></i> Explorer la collection</a>
+        <a href="#about" class="btn-secondary">Notre histoire <i class="fas fa-arrow-right"></i></a>
       </div>
-
       <div class="hero-stats">
-        <div class="stat-item"><strong>500+</strong> <span>Clients satisfaits</span></div>
-        <div class="stat-item"><strong>24h</strong> <span>Livraison Dakar</span></div>
+        <div class="stat-item"><strong>500+</strong><span>Clients satisfaits</span></div>
+        <div class="stat-item"><strong>24h</strong><span>Livraison Dakar</span></div>
+        <div class="stat-item"><strong>5+</strong><span>Ans d'expérience</span></div>
       </div>
     </div>
-
     <div class="hero-visual">
       <div class="image-stack">
-        <img src="images/yaye_fall.png" alt="Yaye Fall Collection" class="main-img">
-        <div class="img-accent"></div> </div>
+        <img src="images/yaye_fall.png" alt="Collection Xelcom Chic" class="main-img">
+        <div class="img-accent"></div>
+        <div class="hero-badge">
+          <i class="fas fa-shield-alt"></i>
+          <div>
+            <span>Qualité garantie</span>
+            <strong>Premium</strong>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
 </section>
 
-<section id="products" class="products container">
-    <h2><i class="fas fa-shopping-cart"></i> Notre Boutique</h2>
+<!-- ===== PRODUCTS ===== -->
+<section id="products">
+  <div class="container">
 
-    <div class="product-category">
-        <h3 class="category-title"><i class="fas fa-tshirt"></i> Prêt-à-porter</h3>
-        <div class="product-grid">
-            <div class="product">
-                <div class="product-image">
-                    <img src="images/ndijtlaay.jpg" alt="Ndijtlaay">
-                    <div class="product-overlay">
-                        <a href="#" class="btn-detail">Détails</a>
-                    </div>
-                </div>
-                <h3>Ndijtlaay</h3>
-                <p class="price">12 000 FCFA</p>
-            </div>
-            <div class="product">
-                <div class="product-image">
-                    <img src="images/marakis2.jpg" alt="Marakis">
-                    <div class="product-overlay">
-                        <a href="#" class="btn-detail">Détails</a>
-                    </div>
-                </div>
-                <h3>Marakis Premium</h3>
-                <p class="price">15 000 FCFA</p>
-            </div>
-            </div>
+    <div class="products-header reveal">
+      <span class="section-tag">Notre Boutique</span>
+      <h2 class="section-title">Toute la <span>Collection</span></h2>
+      <div class="divider"></div>
+      <p>Des pièces soigneusement sélectionnées pour refléter votre style et votre identité.</p>
     </div>
 
-    <div class="product-category">
-        <h3 class="category-title"><i class="fas fa-hat-cowboy"></i> Accessoires</h3>
-        <div class="product-grid">
-            <div class="product">
-                <div class="product-image">
-                    <img src="images/caps.jpg" alt="Casquettes">
-                    <div class="product-overlay">
-                        <a href="#" class="btn-detail">Détails</a>
-                    </div>
-                </div>
-                <h3>Casquette HDX</h3>
-                <p class="price">5 000 FCFA</p>
+    <div class="filter-tabs reveal">
+      <button class="filter-btn active" data-filter="all">Tout voir</button>
+      <button class="filter-btn" data-filter="pret-a-porter">Prêt-à-porter</button>
+      <button class="filter-btn" data-filter="accessoires">Accessoires</button>
+      <button class="filter-btn" data-filter="nouveautes">Nouveautés</button>
+    </div>
+
+    <!-- ── Prêt-à-porter ── -->
+    <div class="product-category reveal">
+      <div class="category-header">
+        <h3><i class="fas fa-tshirt" style="color:var(--primary);margin-right:10px"></i>Prêt-à-porter</h3>
+        <div class="category-line"></div>
+        <span class="category-count">6 articles</span>
+      </div>
+      <div class="product-grid">
+
+        <div class="product-card" data-cat="pret-a-porter">
+          <div class="product-image">
+            <img src="images/ndijtlaay.jpg" alt="Ndijtlaay" loading="lazy">
+            <div class="product-overlay">
+              <button class="btn-add-cart"><i class="fas fa-shopping-cart"></i> Ajouter au panier</button>
+              <a href="#" class="btn-detail">Voir les détails</a>
             </div>
+            <button class="wishlist-btn" title="Ajouter aux favoris"><i class="far fa-heart"></i></button>
+          </div>
+          <div class="product-info">
+            <h3>Ndijtlaay</h3>
+            <p>Tissu traditionnel de qualité</p>
+            <div class="product-meta">
+              <span class="price">12 000 FCFA</span>
+              <div class="product-rating">
+                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
+              </div>
+            </div>
+          </div>
         </div>
-    </div>
+
+        <div class="product-card" data-cat="pret-a-porter">
+          <div class="product-image">
+            <img src="images/marakis2.jpg" alt="Marakis Premium" loading="lazy">
+            <span class="product-badge">Populaire</span>
+            <div class="product-overlay">
+              <button class="btn-add-cart"><i class="fas fa-shopping-cart"></i> Ajouter au panier</button>
+              <a href="#" class="btn-detail">Voir les détails</a>
+            </div>
+            <button class="wishlist-btn" title="Ajouter aux favoris"><i class="far fa-heart"></i></button>
+          </div>
+          <div class="product-info">
+            <h3>Marakis Premium</h3>
+            <p>Coupe moderne, finition impeccable</p>
+            <div class="product-meta">
+              <span class="price">15 000 FCFA</span>
+              <div class="product-rating">
+                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="product-card" data-cat="pret-a-porter nouveautes">
+          <div class="product-image">
+            <img src="images/laafa2.jpg" alt="Laafa 2" loading="lazy">
+            <span class="product-badge new">Nouveau</span>
+            <div class="product-overlay">
+              <button class="btn-add-cart"><i class="fas fa-shopping-cart"></i> Ajouter au panier</button>
+              <a href="#" class="btn-detail">Voir les détails</a>
+            </div>
+            <button class="wishlist-btn" title="Ajouter aux favoris"><i class="far fa-heart"></i></button>
+          </div>
+          <div class="product-info">
+            <h3>Laafa 2</h3>
+            <p>Tissu traditionnel de qualité</p>
+            <div class="product-meta">
+              <span class="price">18 000 FCFA</span>
+              <div class="product-rating">
+                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="product-card" data-cat="pret-a-porter">
+          <div class="product-image">
+            <img src="images/huile parfumé 6ml.png" alt="Huile Parfumé" loading="lazy">
+            <span class="product-badge">Bestseller</span>
+            <div class="product-overlay">
+              <button class="btn-add-cart"><i class="fas fa-shopping-cart"></i> Ajouter au panier</button>
+              <a href="#" class="btn-detail">Voir les détails</a>
+            </div>
+            <button class="wishlist-btn" title="Ajouter aux favoris"><i class="far fa-heart"></i></button>
+          </div>
+          <div class="product-info">
+            <h3>Huile Parfumé</h3>
+            <p>Huile parfumée de qualité supérieure</p>
+            <div class="product-meta">
+              <span class="price">22 000 FCFA</span>
+              <div class="product-rating">
+                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="product-card" data-cat="pret-a-porter nouveautes">
+          <div class="product-image">
+            <img src="images/kaftan_elite.jpg" alt="Kaftan Élite" loading="lazy">
+            <span class="product-badge new">Nouveau</span>
+            <div class="product-overlay">
+              <button class="btn-add-cart"><i class="fas fa-shopping-cart"></i> Ajouter au panier</button>
+              <a href="#" class="btn-detail">Voir les détails</a>
+            </div>
+            <button class="wishlist-btn" title="Ajouter aux favoris"><i class="far fa-heart"></i></button>
+          </div>
+          <div class="product-info">
+            <h3>Kaftan Élite</h3>
+            <p>Longue kaftan, broderie dorée</p>
+            <div class="product-meta">
+              <span class="price">25 000 FCFA</span>
+              <div class="product-rating">
+                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="product-card" data-cat="pret-a-porter">
+          <div class="product-image">
+            <img src="images/chemise_wax.jpg" alt="Chemise Wax Élégance" loading="lazy">
+            <div class="product-overlay">
+              <button class="btn-add-cart"><i class="fas fa-shopping-cart"></i> Ajouter au panier</button>
+              <a href="#" class="btn-detail">Voir les détails</a>
+            </div>
+            <button class="wishlist-btn" title="Ajouter aux favoris"><i class="far fa-heart"></i></button>
+          </div>
+          <div class="product-info">
+            <h3>Chemise Wax Élégance</h3>
+            <p>Wax 100% coton imprimé</p>
+            <div class="product-meta">
+              <span class="price">9 500 FCFA</span>
+              <div class="product-rating">
+                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div><!-- /prêt-à-porter -->
+
+    <!-- ── Accessoires ── -->
+    <div class="product-category reveal">
+      <div class="category-header">
+        <h3><i class="fas fa-hat-cowboy" style="color:var(--primary);margin-right:10px"></i>Accessoires</h3>
+        <div class="category-line"></div>
+        <span class="category-count">4 articles</span>
+      </div>
+      <div class="product-grid">
+
+        <div class="product-card" data-cat="accessoires">
+          <div class="product-image">
+            <img src="images/caps.jpg" alt="Casquette HDX" loading="lazy">
+            <span class="product-badge">Top vente</span>
+            <div class="product-overlay">
+              <button class="btn-add-cart"><i class="fas fa-shopping-cart"></i> Ajouter au panier</button>
+              <a href="#" class="btn-detail">Voir les détails</a>
+            </div>
+            <button class="wishlist-btn" title="Ajouter aux favoris"><i class="far fa-heart"></i></button>
+          </div>
+          <div class="product-info">
+            <h3>Casquette HDX</h3>
+            <p>Snapback premium ajustable</p>
+            <div class="product-meta">
+              <span class="price">5 000 FCFA</span>
+              <div class="product-rating">
+                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="product-card" data-cat="accessoires nouveautes">
+          <div class="product-image">
+            <img src="images/sac_wax.jpg" alt="Sac Wax Chic" loading="lazy">
+            <span class="product-badge new">Nouveau</span>
+            <div class="product-overlay">
+              <button class="btn-add-cart"><i class="fas fa-shopping-cart"></i> Ajouter au panier</button>
+              <a href="#" class="btn-detail">Voir les détails</a>
+            </div>
+            <button class="wishlist-btn" title="Ajouter aux favoris"><i class="far fa-heart"></i></button>
+          </div>
+          <div class="product-info">
+            <h3>Sac Wax Chic</h3>
+            <p>Cuir et tissu wax imprimé</p>
+            <div class="product-meta">
+              <span class="price">8 500 FCFA</span>
+              <div class="product-rating">
+                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="product-card" data-cat="accessoires">
+          <div class="product-image">
+            <img src="images/ceinture_tissee.jpg" alt="Ceinture Tissée" loading="lazy">
+            <div class="product-overlay">
+              <button class="btn-add-cart"><i class="fas fa-shopping-cart"></i> Ajouter au panier</button>
+              <a href="#" class="btn-detail">Voir les détails</a>
+            </div>
+            <button class="wishlist-btn" title="Ajouter aux favoris"><i class="far fa-heart"></i></button>
+          </div>
+          <div class="product-info">
+            <h3>Ceinture Tissée</h3>
+            <p>Artisanat local, coloris variés</p>
+            <div class="product-meta">
+              <span class="price">3 500 FCFA</span>
+              <div class="product-rating">
+                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="product-card" data-cat="accessoires">
+          <div class="product-image">
+            <img src="images/bracelet_cuir.jpg" alt="Bracelet Cuir Xelcom" loading="lazy">
+            <div class="product-overlay">
+              <button class="btn-add-cart"><i class="fas fa-shopping-cart"></i> Ajouter au panier</button>
+              <a href="#" class="btn-detail">Voir les détails</a>
+            </div>
+            <button class="wishlist-btn" title="Ajouter aux favoris"><i class="far fa-heart"></i></button>
+          </div>
+          <div class="product-info">
+            <h3>Bracelet Cuir Xelcom</h3>
+            <p>Cuir tanné, logo gravé</p>
+            <div class="product-meta">
+              <span class="price">2 500 FCFA</span>
+              <div class="product-rating">
+                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i><i class="far fa-star"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div><!-- /accessoires -->
+
+  </div>
 </section>
 
+<!-- ===== À PROPOS ===== -->
 <section id="about" class="about">
   <div class="container">
     <div class="about-wrapper">
-      <div class="about-visual">
-        <div class="image-container">
+      <div class="about-visual reveal">
+        <div class="about-img-wrap">
           <img src="images/atelier_xelcom.jpg" alt="Notre Atelier" class="about-img">
-          <div class="experience-badge">
-            <span class="years">5+</span>
-            <span class="text">Ans de Passion</span>
-          </div>
+        </div>
+        <div class="exp-badge">
+          <span class="years">5+</span>
+          <span class="text">Ans de Passion</span>
         </div>
       </div>
-
-      <div class="about-content">
-        <span class="section-subtitle">Notre Histoire</span>
-        <h2>Plus qu'une Boutique, <br><span>Un Style de Vie</span></h2>
-        <p>
-          Fondée au cœur de <strong>Petit Mbao</strong>, Xelcom Chic est née d'une ambition simple : 
-          allier la noblesse des tissus traditionnels sénégalais à la modernité du prêt-à-porter urbain.
-        </p>
-        <p>
-          Chaque pièce de notre collection est sélectionnée avec soin pour refléter l'élégance 
-          et le dynamisme de la jeunesse sénégalaise. Nous ne vendons pas que des vêtements, 
-          nous célébrons une identité.
-        </p>
-
+      <div class="about-content reveal">
+        <span class="section-tag">Notre Histoire</span>
+        <h2 class="section-title">Plus qu'une Boutique,<br><span>Un Style de Vie</span></h2>
+        <div class="divider"></div>
+        <p>Fondée au cœur de <strong>Petit Mbao</strong>, Xelcom Chic est née d'une ambition simple : allier la noblesse des tissus traditionnels sénégalais à la modernité du prêt-à-porter urbain.</p>
+        <p>Chaque pièce de notre collection est sélectionnée avec soin pour refléter l'élégance et le dynamisme de la jeunesse sénégalaise. Nous ne vendons pas que des vêtements, nous célébrons une identité.</p>
         <div class="values-grid">
           <div class="value-item">
             <i class="fas fa-gem"></i>
-            <div>
-              <h4>Qualité Premium</h4>
-              <p>Tissus durables et finitions impeccables.</p>
-            </div>
+            <div><h4>Qualité Premium</h4><p>Tissus durables et finitions impeccables.</p></div>
           </div>
           <div class="value-item">
             <i class="fas fa-truck-fast"></i>
-            <div>
-              <h4>Logistique Fiable</h4>
-              <p>Livraison rapide partout au Sénégal.</p>
-            </div>
+            <div><h4>Livraison Rapide</h4><p>Partout au Sénégal sous 24h à Dakar.</p></div>
+          </div>
+          <div class="value-item">
+            <i class="fas fa-palette"></i>
+            <div><h4>Design Unique</h4><p>Pièces exclusives inspirées du patrimoine.</p></div>
+          </div>
+          <div class="value-item">
+            <i class="fas fa-headset"></i>
+            <div><h4>Support Client</h4><p>Disponible 7j/7 via WhatsApp.</p></div>
           </div>
         </div>
-
-        <a href="#contact" class="btn-outline">En savoir plus sur nous</a>
+        <a href="#contact" class="btn-outline">Nous contacter <i class="fas fa-arrow-right"></i></a>
       </div>
     </div>
   </div>
 </section>
 
-  <section id="contact" class="contact">
+<!-- ===== CONTACT ===== -->
+<section id="contact">
   <div class="container">
-    <div class="contact-grid">
-      
+    <div class="contact-section-header reveal">
+      <span class="section-tag">Nous trouver</span>
+      <h2 class="section-title">Restons en <span>Contact</span></h2>
+      <div class="divider"></div>
+    </div>
+    <div class="contact-grid reveal">
       <div class="contact-info-side">
-        <span class="section-subtitle">Nous trouver</span>
-        <h2>Restons en <span>Contact</span></h2>
-        <p>Une question sur une taille ou une commande ? Notre équipe à Petit Mbao vous répond sous 24h.</p>
-        
+        <p>Une question sur une taille, une commande ou un produit ? Notre équipe à Petit Mbao vous répond sous 24h.</p>
         <div class="contact-details">
           <div class="detail-card">
             <i class="fas fa-map-marker-alt"></i>
-            <div>
-              <h4>Showroom</h4>
-              <p>Petit Mbao, Arrêt Gris Bordeaux, Sénégal</p>
-            </div>
+            <div><h4>Showroom</h4><p>Petit Mbao, Arrêt Gris Bordeaux, Dakar — Sénégal</p></div>
           </div>
-          
           <div class="detail-card">
-            <i class="fas fa-phone-alt"></i>
-            <div>
-              <h4>Téléphone & WhatsApp</h4>
-              <p>+221 78 545 57 97</p>
-            </div>
+            <i class="fab fa-whatsapp"></i>
+            <div><h4>WhatsApp</h4><p>+221 78 545 57 97</p></div>
           </div>
-
           <div class="detail-card">
             <i class="fas fa-clock"></i>
-            <div>
-              <h4>Horaires</h4>
-              <p>Lun - Sam : 09h00 - 20h00</p>
-            </div>
+            <div><h4>Horaires</h4><p>Lun – Sam : 09h00 – 20h00</p></div>
           </div>
         </div>
       </div>
-
       <div class="contact-form-side">
-        <form class="pro-form">
+        <form id="contact-form">
           <div class="form-group">
             <label>Nom complet</label>
             <input type="text" placeholder="Ex: Moussa Diop" required>
@@ -210,7 +414,16 @@
             <input type="email" placeholder="moussa@email.com" required>
           </div>
           <div class="form-group">
-            <label>Votre message</label>
+            <label>Objet</label>
+            <select>
+              <option>Commande</option>
+              <option>Disponibilité produit</option>
+              <option>Livraison</option>
+              <option>Autre</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label>Message</label>
             <textarea placeholder="Comment pouvons-nous vous aider ?"></textarea>
           </div>
           <button type="submit" class="btn-submit">
@@ -218,71 +431,130 @@
           </button>
         </form>
       </div>
-
     </div>
   </div>
 </section>
 
+<!-- ===== WHATSAPP FLOTTANT ===== -->
 <a href="https://wa.me/221785455797" target="_blank" class="whatsapp-global">
-    <i class="fab fa-whatsapp"></i>
-    <span class="whatsapp-label">Discuter avec nous</span>
+  <i class="fab fa-whatsapp"></i>
+  <span class="whatsapp-label">Discuter avec nous</span>
 </a>
 
-  <footer class="site-footer">
+<!-- ===== FOOTER ===== -->
+<footer class="site-footer">
+  <div class="container">
     <div class="footer-inner">
-      <div class="footer-col footer-brand">
+      <div class="footer-brand">
         <h3>Xelcom Chic</h3>
-        <p>L'élégance à la sénégalaise, à portée de clic.</p>
+        <p>L'élégance à la sénégalaise, à portée de clic. Qualité, authenticité et style depuis Petit Mbao.</p>
+        <div class="footer-social">
+          <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+          <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+          <a href="#" aria-label="TikTok"><i class="fab fa-tiktok"></i></a>
+          <a href="https://wa.me/221785455797" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+        </div>
       </div>
       <div class="footer-col">
         <h4>Navigation</h4>
         <a href="#home">Accueil</a>
-        <a href="#products">Produits</a>
+        <a href="#products">Boutique</a>
         <a href="#about">À propos</a>
         <a href="#contact">Contact</a>
       </div>
       <div class="footer-col">
-        <h4>Suivez-nous</h4>
-        <a href="#">Instagram</a>
-        <a href="#">Facebook</a>
-        <a href="#">TikTok</a>
+        <h4>Catégories</h4>
+        <a href="#products">Prêt-à-porter</a>
+        <a href="#products">Accessoires</a>
+        <a href="#products">Nouveautés</a>
+      </div>
+      <div class="footer-col">
+        <h4>Infos pratiques</h4>
+        <a href="#">Guide des tailles</a>
+        <a href="#">Livraison & retours</a>
+        <a href="#">FAQ</a>
+        <a href="#">Mentions légales</a>
       </div>
     </div>
-    <div class="footer-bottom">
-      <p>© 2026 Xelcom Chic. Tous droits réservés.</p>
-    </div>
-  </footer>
+  </div>
+  <div class="footer-bottom">
+    <p>© 2026 Xelcom Chic. Tous droits réservés. — Fait avec ❤️ à Dakar, Sénégal.</p>
+  </div>
+</footer>
 
+<script>
+  // ── Menu mobile ──
+  const menuToggle = document.getElementById('menu-toggle');
+  const navLinks   = document.getElementById('nav-links');
+  menuToggle.addEventListener('click', () => navLinks.classList.toggle('open'));
 
-  <script src="script.js"></script>
-  <script>
-    // --- Menu Toggle Mobile ---
-const menuToggle = document.getElementById('menu-toggle');
-const navLinks = document.getElementById('nav-links');
+  // ── Compte dropdown ──
+  const accountBtn  = document.getElementById('account-btn');
+  const accountMenu = document.getElementById('account-menu');
+  accountBtn.addEventListener('click', e => { e.stopPropagation(); accountMenu.classList.toggle('open'); });
+  window.addEventListener('click', () => accountMenu.classList.remove('open'));
 
-menuToggle.addEventListener('click', () => {
-    navLinks.classList.toggle('active');
-});
+  // ── Header shadow au scroll ──
+  window.addEventListener('scroll', () => {
+    document.querySelector('header').style.boxShadow =
+      window.scrollY > 40 ? '0 4px 20px rgba(0,0,0,0.5)' : '0 4px 15px rgba(0,0,0,0.4)';
+  });
 
-// --- Menu Compte ---
-const accountBtn = document.getElementById('account-btn');
-const accountMenu = document.getElementById('account-menu');
+  // ── Scroll reveal ──
+  const obs = new IntersectionObserver(entries => {
+    entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('visible'); obs.unobserve(e.target); }});
+  }, { threshold: 0.1 });
+  document.querySelectorAll('.reveal').forEach(r => obs.observe(r));
 
-accountBtn.addEventListener('click', (e) => {
-    e.stopPropagation();
-    accountMenu.classList.toggle('open');
-});
+  // ── Wishlist toggle ──
+  document.querySelectorAll('.wishlist-btn').forEach(btn => {
+    btn.addEventListener('click', () => {
+      const icon = btn.querySelector('i');
+      icon.classList.toggle('far');
+      icon.classList.toggle('fas');
+      btn.style.color = icon.classList.contains('fas') ? '#e53935' : '';
+    });
+  });
 
-// Fermer le menu si on clique ailleurs
-window.addEventListener('click', () => {
-    accountMenu.classList.remove('open');
-});
+  // ── Filtres produits ──
+  document.querySelectorAll('.filter-btn').forEach(btn => {
+    btn.addEventListener('click', () => {
+      document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+      btn.classList.add('active');
+      const filter = btn.dataset.filter;
+      document.querySelectorAll('.product-card').forEach(card => {
+        const cats = card.dataset.cat || '';
+        card.style.display = (filter === 'all' || cats.includes(filter)) ? '' : 'none';
+      });
+      document.querySelectorAll('.product-category').forEach(cat => {
+        const hasVisible = [...cat.querySelectorAll('.product-card')].some(c => c.style.display !== 'none');
+        cat.style.display = hasVisible ? '' : 'none';
+      });
+    });
+  });
 
-// --- Gestion Paiement (Popup déjà existante) ---
-function showPaymentPopup(method, number) {
-    alert(`Paiement via ${method}\nNuméro: ${number}\n(Copié dans le presse-papier)`);
-    navigator.clipboard.writeText(number);
-}
-  </script>
+  // ── Ajouter au panier ──
+  document.querySelectorAll('.btn-add-cart').forEach(btn => {
+    btn.addEventListener('click', () => {
+      const orig = btn.innerHTML;
+      btn.innerHTML = '<i class="fas fa-check"></i> Ajouté !';
+      btn.style.background = '#2CA87F';
+      setTimeout(() => { btn.innerHTML = orig; btn.style.background = ''; }, 1600);
+    });
+  });
+
+  // ── Formulaire de contact ──
+  document.getElementById('contact-form').addEventListener('submit', e => {
+    e.preventDefault();
+    const btn = e.target.querySelector('.btn-submit');
+    btn.innerHTML = '<i class="fas fa-check"></i> Message envoyé !';
+    btn.style.background = '#2CA87F';
+    setTimeout(() => {
+      btn.innerHTML = 'Envoyer le message <i class="fas fa-paper-plane"></i>';
+      btn.style.background = '';
+      e.target.reset();
+    }, 3000);
+  });
+</script>
 </body>
 </html>
